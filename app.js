@@ -61,7 +61,12 @@ function mainFunction(){
     } sub(90,90,90);
    }mainFunction()
 
-   
+//ques 5//
+//ans 5//
+
+
+
+
 //ques 6//
 //ans 6//
 function vowel(){
@@ -79,6 +84,22 @@ console.log(senArr.join("").trim());
 
 }vowel()
 
+//ques 7//
+//ans 7//
+let sentence = "my name is ismail"
+let charInd ;
+
+function myIndex(char) {
+    for (let i = 0; i< sentence.length; i++){  
+    if (sentence[i]==char){
+        charInd = i
+        break;
+        
+    }
+    }
+    console.log(charInd);
+    
+}myIndex("i")
 
 //ques 8//
 //ans 8//
@@ -110,5 +131,68 @@ function meter(){
 }distance(5)
 
 
+//ques 9 //
+//ans 9 //
+
+function employeIncome(hours){
+    if (hours > 40) {
+        let moreHours = hours - 40
+        console.log("More hours employe work -->",moreHours);  
+        let paid = moreHours *12
+        console.log("Total Overtime paid of employe is -->",paid);
+        
+    }else{
+        console.log("Employe did not work overtime!");
+        
+    }
+    
+
+    
+}employeIncome(40)
 
 
+//ques 10 //
+//ans 10 //
+
+function cost(amount){
+ let hundreds  = Math.floor(amount /100)
+    console.log("The note of 100's are -->",hundreds);
+
+    amount = amount % 100
+let fifties = Math.floor(amount/50)
+  console.log("The note of 50's are -->",fifties);
+ amount = amount %50
+let ten = Math.floor(amount/10)
+ console.log("The note of 10's are -->",ten);
+    
+}cost(490)
+
+
+
+
+
+
+
+
+
+console.log("js running -->");
+
+let para = "my name is hasan";
+
+let charIndex = -1;
+// console.log(para.indexOf("s"));
+
+function myIndexOf(char) {
+  for (let i = 0; i < para.length; i++) {
+    if (para[i] == char) {
+      charIndex = i;
+      break;
+    }
+  }
+
+  console.log(char);
+}
+
+myIndexOf("a");
+
+// console.log(charIndex);
